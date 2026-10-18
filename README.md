@@ -52,7 +52,7 @@
 - Expense tracking with categories, payment methods and recurring bills.
 - Reports: sales trend, payment mix, discounts given, top products, category breakdown, profit, and reorder / expiry lists, with CSV export.
 - Profile (including optional professional and business licence details), settings, backup export, and login / register / 404 pages.
-- A public-facing **welcome / landing page** (`welcome.html`) with features, pricing plans and FAQ.
+- A public-facing **welcome / landing page** (`index.html`) with features, pricing plans and FAQ.
 
 **Interface**
 - Responsive layout with a collapsible sidebar and a mobile bottom-sheet cart.
@@ -62,7 +62,7 @@
 
 | Page | File | What it does |
 | --- | --- | --- |
-| Dashboard | `index.html` | Today's sales, 7-day chart, payment mix, low stock, expiring items, open orders |
+| Dashboard | `dashboard.html` | Today's sales, 7-day chart, payment mix, low stock, expiring items, open orders |
 | Point of Sale | `pos.html` | Cart, customer picker, discounts, checkout and receipt |
 | Sales History | `sales.html` | Browse, filter, export and void sales |
 | Products | `product.html` | Add, edit, view and delete products |
@@ -75,7 +75,7 @@
 | Reports | `reports.html` | Sales, profit and inventory reports |
 | My Profile | `profile.html` | Personal, licence and store details |
 | Settings | `settings.html` | Preferences, backup and reset |
-| Welcome | `welcome.html` | Landing page with features, plans and FAQ |
+| Landing page | `index.html` | Welcome page with features, plans and FAQ |
 | Login / Register / 404 | `login.html`, `register.html`, `404.html` | Account and error pages |
 
 ## Getting started
@@ -84,7 +84,7 @@ There is nothing to install or build.
 
 **Option 1 — open the file**
 
-Open `index.html` in your browser.
+Open `index.html` (the landing page) in your browser, then use **Explore live demo** to reach the dashboard.
 
 **Option 2 — run a local server** (recommended)
 
@@ -113,7 +113,8 @@ Sample expiry dates are relative to today, so every status (expired, expiring so
 
 ```
 talipapapos/
-├── index.html              # Dashboard
+├── index.html              # Landing page (welcome)
+├── dashboard.html          # Dashboard
 ├── pos.html                # Point of sale
 ├── sales.html              # Sales history
 ├── product.html            # Product catalogue
@@ -126,7 +127,6 @@ talipapapos/
 ├── reports.html            # Reports
 ├── profile.html            # My profile
 ├── settings.html           # Settings
-├── welcome.html            # Landing page
 ├── login.html              # Sign in
 ├── register.html           # Create account
 ├── 404.html                # Not found
