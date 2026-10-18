@@ -71,7 +71,6 @@
     .social-btn { width: 2.5rem; height: 2.5rem; border-radius: 9999px; display: inline-flex; align-items: center; justify-content: center; background: #fff;
                   border: 1px solid #d7f3e3; color: #12804f; transition: background .15s, color .15s, transform .15s; }
     .social-btn:hover { background: #12804f; color: #fff; transform: translateY(-2px); }
-    .sticky-cta { transition: transform .3s ease, opacity .3s ease; }
     .footer-link:hover { color: #12804f; }
   </style>
   <script>document.documentElement.classList.add('js')</script>
@@ -436,11 +435,6 @@
     </div>
   </div>
 </footer>
-<!-- mobile sticky call-to-action -->
-<div class="sticky-cta md:hidden fixed inset-x-0 bottom-0 z-30 bg-white/95 backdrop-blur border-t border-brand-100 px-4 py-3 pb-[max(.75rem,env(safe-area-inset-bottom))]"
-     :class="sticky ? 'translate-y-0 opacity-100' : 'translate-y-full opacity-0 pointer-events-none'" :aria-hidden="String(!sticky)">
-  <a href="register.html" :tabindex="sticky ? 0 : -1" class="flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-700 text-white font-semibold rounded-xl py-3 min-h-[48px] shadow-card">Start free trial <span class="text-brand-200 font-normal text-sm">· no credit card</span></a>
-</div>
 
 <script>
   (function () {
