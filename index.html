@@ -376,7 +376,7 @@
 </main>
 
 <!-- ───────── FOOTER ───────── -->
-<footer class="bg-slate-50 border-t border-brand-100 pb-20 md:pb-0" x-data="{ email: '', done: false, bad: false,
+<footer class="bg-slate-50 border-t border-brand-100" x-data="{ email: '', done: false, bad: false,
     subscribe() { this.bad = !/^\S+@\S+\.\S+$/.test(this.email); if (!this.bad) { this.done = true; this.email = ''; } } }">
   <div class="max-w-6xl mx-auto px-4 sm:px-6 pt-14 pb-8">
     <div class="grid grid-cols-2 gap-x-6 gap-y-10 lg:grid-cols-[1.4fr_1fr_1fr_1.4fr] lg:gap-x-10">
